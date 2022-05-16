@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-section{
+body {
+    background-image: url('./img/background.jpg');
+}
+
+section {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -17,11 +19,11 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #0062be;
+    background: black;
     transition: 0.5s;
 }
 
-header{
+header {
     position: absolute;
     left: 0;
     top: 0;
@@ -29,13 +31,15 @@ header{
     padding: 20px 100px;
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
 }
-header .logo{
+
+header .logo {
     position: relative;
     max-width: 80px;
 }
-header ul{
+
+header ul {
     position: relative;
     display: flex;
 }
@@ -44,7 +48,7 @@ header ul li {
     list-style: none;
 }
 
-header ul li a{
+header ul li a {
     display: inline-block;
     color: #fff;
     font-weight: 400;
@@ -52,12 +56,12 @@ header ul li a{
     text-decoration: none;
 }
 
-header ul li a:hover{
+header ul li a:hover {
     color: #00be19;
 
 }
 
-.content{
+.content {
     position: relative;
     width: 100%;
     display: flex;
@@ -66,7 +70,7 @@ header ul li a:hover{
 
 }
 
-.content .textbox{
+.content .textbox {
     position: relative;
     max-width: 600px;
 }
@@ -79,20 +83,20 @@ header ul li a:hover{
     text-transform: uppercase;
 }
 
-.content .textbox h2 span{
+.content .textbox h2 span {
     font-size: 2em;
 }
 
-.content .textbox p{
+.content .textbox p {
     color: #fff;
 }
 
-.content .textbox a{
+.content .textbox a {
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
     background: #fff;
-    color:#111;
+    color: #111;
     border-radius: 40px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -100,7 +104,7 @@ header ul li a:hover{
     text-transform: uppercase;
 }
 
-.content .imgbox{
+.content .imgbox {
     width: 600px;
     display: flex;
     padding-right: 50px;
@@ -108,39 +112,40 @@ header ul li a:hover{
     justify-content: flex-end;
 }
 
-.content .imgbox img{
+.content .imgbox img {
     max-width: 260px;
 }
 
-.thumb{
+.thumb {
     position: absolute;
     left: 50%;
     bottom: 20px;
     transform: translateX(-50%);
     display: flex;
-    
+
 }
+
 .thumb li {
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     cursor: pointer;
     transition: 0.5s;
-    
+
 
 
 }
 
-.thumb li:hover{
+.thumb li:hover {
     transform: translateY(-15px);
 }
 
-.thumb li img{
+.thumb li img {
     max-width: 40px;
-    
+
 }
 
-.sci{
+.sci {
     position: absolute;
     top: 50%;
     right: 30px;
@@ -151,11 +156,11 @@ header ul li a:hover{
     flex-direction: column;
 }
 
-.sci li{
+.sci li {
     list-style: none;
 }
 
-.sci li a{
+.sci li a {
     display: inline-block;
     filter: invert(1);
     margin: 5px 0;
@@ -163,6 +168,6 @@ header ul li a:hover{
 
 }
 
-.sci li:hover{
+.sci li:hover {
     color: #00be19;
 }
