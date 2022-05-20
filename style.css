@@ -8,7 +8,8 @@
 }
 
 body {
-    background-image: url('./img/background.jpg');
+    background-image: url('imagens/bg.jpg');
+    background-position: right top;
 }
 
 section {
@@ -19,7 +20,6 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: black;
     transition: 0.5s;
 }
 
@@ -58,7 +58,6 @@ header ul li a {
 
 header ul li a:hover {
     color: #00be19;
-
 }
 
 .content {
@@ -67,12 +66,13 @@ header ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .content .textbox {
     position: relative;
     max-width: 600px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    /* Sombra em textos */
 }
 
 .content .textbox h2 {
@@ -122,7 +122,6 @@ header ul li a:hover {
     bottom: 20px;
     transform: translateX(-50%);
     display: flex;
-
 }
 
 .thumb li {
@@ -131,9 +130,6 @@ header ul li a:hover {
     margin: 0 20px;
     cursor: pointer;
     transition: 0.5s;
-
-
-
 }
 
 .thumb li:hover {
@@ -142,7 +138,6 @@ header ul li a:hover {
 
 .thumb li img {
     max-width: 40px;
-
 }
 
 .sci {
@@ -165,9 +160,21 @@ header ul li a:hover {
     filter: invert(1);
     margin: 5px 0;
     transform: scale(0.6);
-
 }
 
 .sci li:hover {
     color: #00be19;
+}
+
+.video {
+    width: 55%;
+}
+
+.carouselExampleCaptions {
+    width: 10%;
+    height: 10%;
+}
+
+.carousel-caption {
+    text-shadow: 0.1em 0.1em 0.2em black;
 }
